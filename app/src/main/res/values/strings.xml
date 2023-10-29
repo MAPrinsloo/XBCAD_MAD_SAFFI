@@ -5,4 +5,8 @@
     <string name="ackPage">Acknowledgements Page</string>>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DigitalExhibition">DigitalExhibition</string>
+    <string name="AboutSAFFI">About SAFFI</string>
+    <string name="HomePage">Home Page</string>
+    <string name="Home">Home</string>
 </resources>

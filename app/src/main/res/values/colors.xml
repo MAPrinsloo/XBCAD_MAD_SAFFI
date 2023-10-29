@@ -1,6 +1,8 @@
 
 <resources>
     <color name="seed">#A227FD</color>
+    <color name="purple">#FFBB86FC</color>
+    <color name="black">#FF000000</color>
     <color name="md_theme_light_primary">#8D00E4</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
     <color name="md_theme_light_primaryContainer">#F1DAFF</color>
