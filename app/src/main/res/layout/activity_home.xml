@@ -18,10 +18,25 @@
         app:titleCentered="true" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/mtHome"
+        android:id="@+id/llImageLayout"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/mad_logo" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/llbuttonLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/mtHome"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/llImageLayout"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
