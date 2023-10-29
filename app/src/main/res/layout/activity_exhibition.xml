@@ -7,7 +7,7 @@
     tools:context=".ExhibitionActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/mtDocument"
+        android:id="@+id/mtExhibition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -17,4 +17,19 @@
         app:navigationIcon="@drawable/back"
         app:title="@string/exhibition"
         app:titleCentered="true" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mtExhibition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:text="@string/ackPage"
+        android:textColor="@color/md_theme_light_onSurface" />
+
 </RelativeLayout>
