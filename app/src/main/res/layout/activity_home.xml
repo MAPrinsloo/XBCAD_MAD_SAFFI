@@ -17,4 +17,27 @@
         app:title="@string/Home"
         app:titleCentered="true" />
 
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tgSelect"
+        android:layout_below="@id/mtHome"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AboutSAFFI"
+            />
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/btnMAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MAD"
+            />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
 </RelativeLayout>
