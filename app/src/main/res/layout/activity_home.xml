@@ -17,27 +17,39 @@
         app:title="@string/Home"
         app:titleCentered="true" />
 
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/tgSelect"
+    <LinearLayout
+        android:id="@+id/llbuttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/mtHome"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:id="@+id/btnAbout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/AboutSAFFI"
-            />
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:id="@+id/btnMAD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/MAD"
-            />
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/tgSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnAbout"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/AboutSAFFI" />
+
+            <Button
+                android:id="@+id/btnMAD"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/MAD" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
 
 </RelativeLayout>
