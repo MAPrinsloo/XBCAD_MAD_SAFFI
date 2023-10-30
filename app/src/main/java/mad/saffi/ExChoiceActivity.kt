@@ -57,6 +57,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgAndre.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "andre")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -72,6 +73,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgDaniel.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "daniel")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -79,6 +81,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgEhrlich.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "ehrlich")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -86,6 +89,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgFagri.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "fagri")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -93,6 +97,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgIsaac.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "isaac")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -100,6 +105,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgJohn.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "john")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -107,6 +113,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgPatrick.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "patrick")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -114,6 +121,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgQuentin.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "quentin")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -121,6 +129,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgRaven.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "raven")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -128,6 +137,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgShawn.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "shawn")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -135,6 +145,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgFrancoisHagin.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "francois_hagin")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -142,6 +153,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgWilliam.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "william")
             startActivity(intent)
         }
     }
