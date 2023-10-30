@@ -52,6 +52,98 @@ class ExChoiceActivity : AppCompatActivity() {
                 CloseSettings()
             }
         }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgAndre.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgBarry.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "barry")
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgDaniel.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgEhrlich.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgFagri.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgIsaac.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgJohn.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgPatrick.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgQuentin.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgRaven.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgShawn.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgFrancoisHagin.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //
+        ExChoiceBinding.imgWilliam.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            startActivity(intent)
+        }
     }
     //----------------------------------------------------------------------------------------//
     //Closes the settings fragment
