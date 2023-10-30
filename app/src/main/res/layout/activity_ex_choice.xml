@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/tvAndre"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/tvBarry"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -45,7 +45,7 @@
 
         <TextView
             android:id="@+id/tvDaniel"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -91,7 +91,7 @@
 
         <TextView
             android:id="@+id/tvEhrlich"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -99,7 +99,7 @@
 
         <TextView
             android:id="@+id/tvFagri"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -107,7 +107,7 @@
 
         <TextView
             android:id="@+id/tvIsaac"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -153,7 +153,7 @@
 
         <TextView
             android:id="@+id/tvJohn"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -161,7 +161,7 @@
 
         <TextView
             android:id="@+id/tvPatrick"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -169,7 +169,7 @@
 
         <TextView
             android:id="@+id/tvQuentin"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -216,7 +216,7 @@
 
         <TextView
             android:id="@+id/tvRaven"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -224,7 +224,7 @@
 
         <TextView
             android:id="@+id/tvShawn"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -232,7 +232,7 @@
 
         <TextView
             android:id="@+id/tvFrancoisHagin"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
