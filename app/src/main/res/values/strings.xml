@@ -17,5 +17,19 @@
     <string name="web_link">https://saffi.org.za/</string>
     <string name="phone_link">+27 21 462 2277</string>
     <string name="email_link">programs@saffi.org.za</string>
+    <string name="Andre">Andre</string>
+    <string name="Barry">Barry</string>
+    <string name="Daniel">Daniel</string>
+    <string name="Ehrlich">Ehrlich</string>
+    <string name="Fagri">Fagri</string>
+    <string name="Isaac">Isaac</string>
+    <string name="John">John</string>
+    <string name="Patrick">Patrick</string>
+    <string name="Quentin">Quentin</string>
+    <string name="Raven">Raven</string>
+    <string name="Shawn">Shawn</string>
+    <string name="FrancoisHagin">Francois Hagin</string>
+    <string name="William">William</string>
+
 
 </resources>
