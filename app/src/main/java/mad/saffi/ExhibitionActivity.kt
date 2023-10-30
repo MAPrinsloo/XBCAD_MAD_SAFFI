@@ -9,16 +9,40 @@ import android.view.Gravity
 import android.widget.RelativeLayout
 import androidx.core.view.isVisible
 import mad.saffi.databinding.ActivityExhibitionBinding
+import java.io.InputStream
+import java.util.*
 
 class ExhibitionActivity : AppCompatActivity() {
     //binding
     lateinit var ExhibitionBinding: ActivityExhibitionBinding
     lateinit var ExhibitionView: RelativeLayout
+    //
+    private lateinit var  Interviewee: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //initialise Interviewee
+        Interviewee = intent.getStringExtra("interviewee").toString()
+
         ExhibitionBinding = ActivityExhibitionBinding.inflate(layoutInflater)
         ExhibitionView = ExhibitionBinding.root
         setContentView(ExhibitionView)
+        //
+        val fileName = Interviewee.toLowerCase()
+        val resourceId = resources.getIdentifier(fileName, "raw", packageName)
+
+        //
+            val inputStream: InputStream = resources.openRawResource(resourceId)
+
+        val scanner = Scanner(inputStream)
+        val stringBuilder = StringBuilder()
+        while (scanner.hasNextLine()) {
+            stringBuilder.append(scanner.nextLine())
+            stringBuilder.append("\n")
+        }
+        val storyContent = stringBuilder.toString()
+
+        ExhibitionBinding.tvDisplay.text = storyContent
+
         //----------------------------------------------------------------------------------------//
         //acknowledgements click
         //Opens acknowledgements page
