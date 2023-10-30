@@ -16,7 +16,7 @@
             android:exported="false" />
         <activity
             android:name=".ExhibitionActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ExChoiceActivity"
             android:exported="false" />
@@ -25,9 +25,6 @@
             android:exported="false" />
         <activity
             android:name=".LandingActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
