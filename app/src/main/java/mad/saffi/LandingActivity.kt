@@ -19,7 +19,7 @@ class LandingActivity : AppCompatActivity() {
 
         LandingBinding = ActivityLandingBinding.inflate(layoutInflater)
         LandingView = LandingBinding.root
-        setContentView(R.layout.activity_landing)
+        setContentView(LandingView)
 
         LandingBinding.btnHome.setOnClickListener()
         {

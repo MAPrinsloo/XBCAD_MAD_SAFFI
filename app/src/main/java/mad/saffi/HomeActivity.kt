@@ -1,5 +1,6 @@
 package mad.saffi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Slide
@@ -7,18 +8,24 @@ import android.transition.TransitionManager
 import android.view.Gravity
 import android.widget.RelativeLayout
 import androidx.core.view.isVisible
-import mad.saffi.databinding.ActivityExhibitionBinding
 import mad.saffi.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
+    //
     lateinit var HomeBinding: ActivityHomeBinding
     lateinit var HomeView: RelativeLayout
+    //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //
         HomeBinding = ActivityHomeBinding.inflate(layoutInflater)
         HomeView = HomeBinding.root
         setContentView(HomeView)
+        //
 
+        //----------------------------------------------------------------------------------------//
+        //About button click
+        //toggle view on the social fragment
         HomeBinding.btnAbout.setOnClickListener()
         {
             val slide = Slide()
@@ -26,6 +33,9 @@ class HomeActivity : AppCompatActivity() {
             TransitionManager.beginDelayedTransition(HomeView, slide)
             HomeBinding.flSocialBottomSheet.isVisible = !HomeBinding.flSocialBottomSheet.isVisible
         }
+        //----------------------------------------------------------------------------------------//
+        //On background click
+        //Closes all fragments
         HomeBinding.rlHome.setOnClickListener()
         {
             if (HomeBinding.flSettings.isVisible == true)
@@ -38,7 +48,7 @@ class HomeActivity : AppCompatActivity() {
             }
         }
         //----------------------------------------------------------------------------------------//
-        //Settings click
+        //Settings icon click
         HomeBinding.mtHome.setOnMenuItemClickListener { menuItem ->
             if (menuItem.itemId == R.id.account) {
                 val rightSlide = Slide()
@@ -53,7 +63,9 @@ class HomeActivity : AppCompatActivity() {
         }
 
     }
-    private fun CloseSettings():Boolean
+    //----------------------------------------------------------------------------------------//
+    //Closes the settings fragment
+    private fun CloseSettings()
     {
         TransitionManager.endTransitions(HomeView)
 
@@ -61,9 +73,10 @@ class HomeActivity : AppCompatActivity() {
         slide.slideEdge = Gravity.END
         TransitionManager.beginDelayedTransition(HomeBinding.flSettings, slide)
         HomeBinding.flSettings.isVisible = false
-        return true
     }
-    private fun CloseSocials():Boolean
+    //----------------------------------------------------------------------------------------//
+    //Closes the social fragment
+    private fun CloseSocials()
     {
         TransitionManager.endTransitions(HomeView)
 
@@ -72,7 +85,5 @@ class HomeActivity : AppCompatActivity() {
         TransitionManager.beginDelayedTransition(HomeBinding.flSocialBottomSheet, slide)
         HomeBinding.flSocialBottomSheet.isVisible = false
         HomeBinding.tgSelect.clearChecked()
-        return true
-
     }
 }
