@@ -49,8 +49,6 @@ class AcknowledgementsActivity : AppCompatActivity() {
     }
     private fun CloseSettings()
     {
-        TransitionManager.endTransitions(AcknowledgementView)
-
         val slide = Slide()
         slide.slideEdge = Gravity.END
         TransitionManager.beginDelayedTransition(AcknowledgementBinding.flSettings, slide)

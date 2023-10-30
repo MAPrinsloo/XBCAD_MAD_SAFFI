@@ -47,7 +47,6 @@ class LandingActivity : AppCompatActivity() {
 
     private fun CloseSocials()
     {
-        TransitionManager.endTransitions(LandingBinding.root)
         val slide = Slide()
         slide.slideEdge = Gravity.BOTTOM
         TransitionManager.beginDelayedTransition(LandingBinding.flSocialBottomSheet, slide)

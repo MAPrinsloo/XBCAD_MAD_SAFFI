@@ -34,6 +34,14 @@ class HomeActivity : AppCompatActivity() {
             HomeBinding.flSocialBottomSheet.isVisible = !HomeBinding.flSocialBottomSheet.isVisible
         }
         //----------------------------------------------------------------------------------------//
+        //
+        HomeBinding.btnMAD.setOnClickListener()
+        {
+            val intent = Intent(this, ExChoiceActivity::class.java)
+            startActivity(intent)
+            HomeBinding.tgSelect.clearChecked()
+        }
+        //----------------------------------------------------------------------------------------//
         //On background click
         //Closes all fragments
         HomeBinding.rlHome.setOnClickListener()
@@ -61,14 +69,11 @@ class HomeActivity : AppCompatActivity() {
                 false
             }
         }
-
     }
     //----------------------------------------------------------------------------------------//
     //Closes the settings fragment
     private fun CloseSettings()
     {
-        TransitionManager.endTransitions(HomeView)
-
         val slide = Slide()
         slide.slideEdge = Gravity.END
         TransitionManager.beginDelayedTransition(HomeBinding.flSettings, slide)
@@ -78,8 +83,6 @@ class HomeActivity : AppCompatActivity() {
     //Closes the social fragment
     private fun CloseSocials()
     {
-        TransitionManager.endTransitions(HomeView)
-
         val slide = Slide()
         slide.slideEdge = Gravity.BOTTOM
         TransitionManager.beginDelayedTransition(HomeBinding.flSocialBottomSheet, slide)

@@ -16,7 +16,7 @@
             android:exported="false" />
         <activity
             android:name=".ExhibitionActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ExChoiceActivity"
             android:exported="false" />
@@ -25,7 +25,7 @@
             android:exported="false" />
         <activity
             android:name=".LandingActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
