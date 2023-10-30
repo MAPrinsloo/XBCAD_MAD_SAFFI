@@ -81,5 +81,20 @@
         android:scaleType="fitEnd"
         app:srcCompat="@drawable/footer" />
 
+    <FrameLayout
+        android:id="@+id/flSocialBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="mad.saffi.SocialFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_social" />
+    </FrameLayout>
+
 
 </RelativeLayout>
