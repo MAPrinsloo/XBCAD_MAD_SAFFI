@@ -39,7 +39,7 @@ class ExChoiceActivity : AppCompatActivity() {
         //Back click
         ExChoiceBinding.mtExChoice.setOnClickListener()
         {
-            val intent = Intent(this, ExhibitionActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
