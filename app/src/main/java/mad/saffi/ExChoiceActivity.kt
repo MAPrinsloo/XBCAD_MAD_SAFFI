@@ -89,7 +89,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceBinding.imgFagri.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
-            intent.putExtra("interviewee", "fagri")
+            intent.putExtra("interviewee", "fagrie")
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
