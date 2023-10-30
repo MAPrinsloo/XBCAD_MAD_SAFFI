@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".ExhibitionActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -18,18 +18,96 @@
         app:title="@string/exhibition"
         app:titleCentered="true" />
 
+    <LinearLayout
+        android:id="@+id/llVideo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/mtExhibition"
+        android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivExhPurplePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llVideo"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/purple_panel" />
+
+    <ImageView
+        android:id="@+id/ivExhWhitePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ivExhPurplePanel"
+        android:layout_alignTop="@id/ivExhPurplePanel"
+        android:layout_alignRight="@id/ivExhPurplePanel"
+        android:layout_alignBottom="@id/ivExhPurplePanel"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/white_panel" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/ivExhWhitePanel"
+        android:layout_alignTop="@id/ivExhWhitePanel"
+        android:layout_alignRight="@id/ivExhWhitePanel"
+        android:layout_alignBottom="@id/ivExhWhitePanel"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
     <Button
-        android:id="@+id/btnCreateAccount"
+        android:id="@+id/btnAcknowledgements"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/mtExhibition"
+        android:layout_above="@id/ivExhFooter"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dp"
         android:backgroundTint="#FFFFFF"
         android:elevation="4dp"
         android:text="@string/ackPage"
         android:textColor="@color/md_theme_light_onSurface" />
+
+    <ImageView
+        android:id="@+id/ivExhFooter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/footer" />
 
 </RelativeLayout>
