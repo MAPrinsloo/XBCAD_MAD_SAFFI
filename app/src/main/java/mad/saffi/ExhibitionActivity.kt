@@ -18,14 +18,23 @@ class ExhibitionActivity : AppCompatActivity() {
     lateinit var ExhibitionView: RelativeLayout
     //
     private lateinit var  Interviewee: String
+    private lateinit var  IntervieweSRC: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //initialise Interviewee
         Interviewee = intent.getStringExtra("interviewee").toString()
+        //initialise video
+        //IntervieweSRC = intent.getStringExtra("interview_src").toString()
+
+        IntervieweSRC ="https://www.youtube.com/embed/cnm14karKEQ?si=nENzjdDbq7muPmwU"
+
+
 
         ExhibitionBinding = ActivityExhibitionBinding.inflate(layoutInflater)
         ExhibitionView = ExhibitionBinding.root
         setContentView(ExhibitionView)
+        LoadVideo(IntervieweSRC);
         //
         val fileName = Interviewee.toLowerCase()
         val resourceId = resources.getIdentifier(fileName, "raw", packageName)
@@ -91,5 +100,30 @@ class ExhibitionActivity : AppCompatActivity() {
         slide.slideEdge = Gravity.END
         TransitionManager.beginDelayedTransition(ExhibitionBinding.flSettings, slide)
         ExhibitionBinding.flSettings.isVisible = false
+    }
+    private fun LoadVideo(src:String)
+    {
+        val videoUrl1 = "<iframe width=\"100%\" height=\"100%\" src=\"$src\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+        val htmlData = """
+    <html>
+    <body>
+        <div id="video-container">
+            $videoUrl1
+        </div>
+        <script type="text/javascript">
+            var iframe = document.querySelector('#video-container iframe');
+            iframe.onload = function() {
+                var shareButton = iframe.contentDocument.querySelector('.ytp-button-share');
+                if (shareButton) {
+                    shareButton.style.display = 'none';
+                }
+            };
+        </script>
+    </body>
+    </html>
+    """.trimIndent()
+        ExhibitionBinding.wvVideo.settings.javaScriptEnabled = true
+
+        ExhibitionBinding.wvVideo.loadData(htmlData, "text/html", "utf-8")
     }
 }
