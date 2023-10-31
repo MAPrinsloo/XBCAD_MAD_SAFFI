@@ -21,6 +21,22 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceView = ExChoiceBinding.root
         setContentView(ExChoiceView)
 
+        val urlList = mutableListOf(
+            "https://www.youtube.com/embed/xWbGaUApvaw?si=GMVpE_FtjtuAUAV-",
+            "https://www.youtube.com/embed/1YdPY1HhCts?si=efA0vriOpCEQhEfR",
+            "https://www.youtube.com/embed/ODP06L8yzsI?si=cFl1jru6oH1zul1A",
+            "https://www.youtube.com/embed/HedSajfNjiE?si=LdJ5JD4WlLr5P4xN",
+            "https://www.youtube.com/embed/7fcABOqNRSk?si=NGIFDT2eqzQqihzB",
+            "https://www.youtube.com/embed/-Zs3uB-QW1M?si=ytshQUrGlEkTCPeO",
+            "https://www.youtube.com/embed/8l44xyG0Wfg?si=p6vRLo7EpL8UM_UU",
+            "https://www.youtube.com/embed/PYc1oUoWnaA?si=Segm70Ph8kq2E8DZ",
+            "https://www.youtube.com/embed/WYBvVbb8Igc?si=TpQq8a6QqdQ8NWcb",
+            "https://www.example.com/url10",
+            "https://www.example.com/url11",
+            "https://www.example.com/url12",
+            "https://www.example.com/url13"
+        )
+
         //----------------------------------------------------------------------------------------//
         //Settings icon click
         ExChoiceBinding.mtExChoice.setOnMenuItemClickListener { menuItem ->
