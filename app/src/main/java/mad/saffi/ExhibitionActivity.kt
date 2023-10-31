@@ -18,23 +18,20 @@ class ExhibitionActivity : AppCompatActivity() {
     lateinit var ExhibitionView: RelativeLayout
     //
     private lateinit var  Interviewee: String
-    private lateinit var  IntervieweSRC: String
+    private lateinit var  InterviewSRC: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //initialise Interviewee
         Interviewee = intent.getStringExtra("interviewee").toString()
         //initialise video
-        //IntervieweSRC = intent.getStringExtra("interview_src").toString()
-
-        IntervieweSRC ="https://www.youtube.com/embed/cnm14karKEQ?si=nENzjdDbq7muPmwU"
-
+        InterviewSRC = intent.getStringExtra("interview_src").toString()
 
 
         ExhibitionBinding = ActivityExhibitionBinding.inflate(layoutInflater)
         ExhibitionView = ExhibitionBinding.root
         setContentView(ExhibitionView)
-        LoadVideo(IntervieweSRC);
+        LoadVideo(InterviewSRC);
         //
         val fileName = Interviewee.toLowerCase()
         val resourceId = resources.getIdentifier(fileName, "raw", packageName)

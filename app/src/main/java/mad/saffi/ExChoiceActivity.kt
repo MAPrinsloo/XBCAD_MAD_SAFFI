@@ -31,7 +31,7 @@ class ExChoiceActivity : AppCompatActivity() {
             "https://www.youtube.com/embed/8l44xyG0Wfg?si=p6vRLo7EpL8UM_UU",
             "https://www.youtube.com/embed/PYc1oUoWnaA?si=Segm70Ph8kq2E8DZ",
             "https://www.youtube.com/embed/WYBvVbb8Igc?si=TpQq8a6QqdQ8NWcb",
-            "https://www.example.com/url10",
+            "https://www.youtube.com/embed/EKNU-Gch4cA?si=hZmDhmIl-1C2Id0U",
             "https://www.example.com/url11",
             "https://www.example.com/url12",
             "https://www.example.com/url13"
@@ -74,6 +74,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "andre")
+            intent.putExtra("interview_src", urlList[0])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -82,6 +83,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "barry")
+            intent.putExtra("interview_src", urlList[1])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -90,6 +92,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "daniel")
+            intent.putExtra("interview_src", urlList[2])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -98,6 +101,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "ehrlich")
+            intent.putExtra("interview_src", urlList[3])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -106,6 +110,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "fagrie")
+            intent.putExtra("interview_src", urlList[4])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -114,6 +119,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "isaac")
+            intent.putExtra("interview_src", urlList[5])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -122,6 +128,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "john")
+            intent.putExtra("interview_src", urlList[6])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -130,6 +137,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "patrick")
+            intent.putExtra("interview_src", urlList[7])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -138,6 +146,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "quentin")
+            intent.putExtra("interview_src", urlList[9])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -146,6 +155,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "raven")
+            intent.putExtra("interview_src", urlList[8])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -154,6 +164,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "shawn")
+            intent.putExtra("interview_src", urlList[0])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -162,6 +173,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "francois_hagin")
+            intent.putExtra("interview_src", urlList[0])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -170,6 +182,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "william")
+            intent.putExtra("interview_src", urlList[0])
             startActivity(intent)
         }
     }
