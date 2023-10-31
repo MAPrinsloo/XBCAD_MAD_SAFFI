@@ -26,10 +26,11 @@
         android:layout_below="@id/mtExhibition"
         android:orientation="vertical">
 
-        <VideoView
-            android:id="@+id/videoView"
+        <WebView
+            android:id="@+id/wvVideo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
 
