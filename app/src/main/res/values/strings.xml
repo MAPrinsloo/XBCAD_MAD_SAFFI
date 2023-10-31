@@ -30,6 +30,10 @@
     <string name="Shawn">Shawn</string>
     <string name="FrancoisHagin">Francois Hagin</string>
     <string name="William">William</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Website">Website</string>
+    <string name="Email">Email</string>
+    <string name="PhoneNumber">Phone Number</string>
 
 
 </resources>
