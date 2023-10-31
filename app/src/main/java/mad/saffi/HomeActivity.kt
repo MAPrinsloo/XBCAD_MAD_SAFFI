@@ -7,6 +7,7 @@ import android.transition.Slide
 import android.transition.TransitionManager
 import android.view.Gravity
 import android.widget.RelativeLayout
+import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import mad.saffi.databinding.ActivityHomeBinding
 
@@ -90,3 +91,4 @@ class HomeActivity : AppCompatActivity() {
         HomeBinding.tgSelect.clearChecked()
     }
 }
+//
