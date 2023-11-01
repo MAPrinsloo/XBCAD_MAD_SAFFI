@@ -32,9 +32,9 @@ class ExChoiceActivity : AppCompatActivity() {
             "https://www.youtube.com/embed/PYc1oUoWnaA?si=Segm70Ph8kq2E8DZ",
             "https://www.youtube.com/embed/WYBvVbb8Igc?si=TpQq8a6QqdQ8NWcb",
             "https://www.youtube.com/embed/EKNU-Gch4cA?si=hZmDhmIl-1C2Id0U",
-            "https://www.example.com/url11",
-            "https://www.example.com/url12",
-            "https://www.example.com/url13"
+            "https://www.youtube.com/embed/27KzNfDbm60?si=CcdZT67-bnHRrjT5",
+            "https://www.youtube.com/embed/ob_cmoKERxA?si=11N2ZEdL9ls4EHzJ",
+            "https://www.youtube.com/embed/PdPPRFc8O6o?si=dbUphL0ux6qepH2f"
         )
 
         //----------------------------------------------------------------------------------------//
@@ -164,7 +164,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "shawn")
-            intent.putExtra("interview_src", urlList[0])
+            intent.putExtra("interview_src", urlList[10])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -173,7 +173,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "francois_hagin")
-            intent.putExtra("interview_src", urlList[0])
+            intent.putExtra("interview_src", urlList[11])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -182,7 +182,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "william")
-            intent.putExtra("interview_src", urlList[0])
+            intent.putExtra("interview_src", urlList[12])
             startActivity(intent)
         }
     }
