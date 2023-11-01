@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.transition.Slide
 import android.transition.TransitionManager
 import android.view.Gravity
+import android.webkit.WebChromeClient
+import android.webkit.WebSettings
+import android.webkit.WebView
 import android.widget.RelativeLayout
 import androidx.core.view.isVisible
 import mad.saffi.databinding.ActivityExhibitionBinding
@@ -27,10 +30,10 @@ class ExhibitionActivity : AppCompatActivity() {
         //initialise video
         InterviewSRC = intent.getStringExtra("interview_src").toString()
 
-
         ExhibitionBinding = ActivityExhibitionBinding.inflate(layoutInflater)
         ExhibitionView = ExhibitionBinding.root
         setContentView(ExhibitionView)
+
         LoadVideo(InterviewSRC);
         //
         val fileName = Interviewee.toLowerCase()
@@ -100,27 +103,11 @@ class ExhibitionActivity : AppCompatActivity() {
     }
     private fun LoadVideo(src:String)
     {
-        val videoUrl1 = "<iframe width=\"100%\" height=\"100%\" src=\"$src\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
-        val htmlData = """
-    <html>
-    <body>
-        <div id="video-container">
-            $videoUrl1
-        </div>
-        <script type="text/javascript">
-            var iframe = document.querySelector('#video-container iframe');
-            iframe.onload = function() {
-                var shareButton = iframe.contentDocument.querySelector('.ytp-button-share');
-                if (shareButton) {
-                    shareButton.style.display = 'none';
-                }
-            };
-        </script>
-    </body>
-    </html>
-    """.trimIndent()
-        ExhibitionBinding.wvVideo.settings.javaScriptEnabled = true
+        ExhibitionBinding.wvVideo.settings.mediaPlaybackRequiresUserGesture = false
+        val videoUrl = "<iframe width=\"100%\" height=\"100%\" src=\"$src\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
 
-        ExhibitionBinding.wvVideo.loadData(htmlData, "text/html", "utf-8")
+        ExhibitionBinding.wvVideo.loadData(videoUrl, "text/html", "utf-8")
+        ExhibitionBinding.wvVideo.settings.javaScriptEnabled = true
+        ExhibitionBinding.wvVideo.setWebChromeClient(WebChromeClient())
     }
 }
