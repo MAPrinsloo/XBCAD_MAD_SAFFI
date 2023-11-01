@@ -22,17 +22,24 @@
     <LinearLayout
         android:id="@+id/llImageAcknowledgement"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/mtExhibition"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
-        <ImageView
+        <com.jsibbold.zoomage.ZoomageView
             android:id="@+id/imgAcknowledgement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/mad_acknowledgement" />
+            app:srcCompat="@drawable/mad_acknowledgement"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoCenter="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_maxScale="8"
+            app:zoomage_minScale="0.6"
+            app:zoomage_restrictBounds="true"
+            app:zoomage_translatable="true"
+            app:zoomage_zoomable="true" />
 
     </LinearLayout>
 
