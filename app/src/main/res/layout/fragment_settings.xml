@@ -26,12 +26,12 @@
             android:text="@string/settings" />
 
         <Button
-            android:id="@+id/btnSignOUt"
+            android:id="@+id/btnExit"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="@string/sign_out"
+            android:text="@string/LandingPage"
             android:textAlignment="textStart"
             android:textColor="@color/md_theme_light_onSurface"
             app:icon="@drawable/sign_out"

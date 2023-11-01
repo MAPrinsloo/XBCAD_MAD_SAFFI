@@ -18,7 +18,7 @@ class SettingsFragment : Fragment() {
         // Inflate the layout for this fragment
         SettingsBinding = FragmentSettingsBinding.inflate(inflater, container, false)
 
-        SettingsBinding.btnSignOUt.setOnClickListener()
+        SettingsBinding.btnExit.setOnClickListener()
         {
             val intent = Intent(requireContext(), LandingActivity::class.java)
             startActivity(intent)

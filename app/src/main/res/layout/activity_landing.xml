@@ -49,27 +49,27 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnAboutSaffi"
-            style="@style/Widget.Material3.Button.OutlinedButton"
-            android:layout_width="@dimen/ButtonWidth"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvDigitalExhibition"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="170dp"
-            android:backgroundTint="@color/purple"
-            android:text="@string/AboutSAFFI"
-            android:textColor="@color/black" />
-
-        <Button
             android:id="@+id/btnHome"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="@dimen/ButtonWidth"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnAboutSaffi"
+            android:layout_above="@id/btnAboutSaffi"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="170dp"
             android:backgroundTint="@color/purple"
             android:text="@string/HomePage"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnAboutSaffi"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="@dimen/ButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnHome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/AboutSAFFI"
             android:textColor="@color/black" />
 
     </LinearLayout>
