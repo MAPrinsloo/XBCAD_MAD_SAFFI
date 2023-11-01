@@ -39,10 +39,17 @@
             android:textSize="30dp" />
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/imgMadMen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/llHeading"
+        app:srcCompat="@drawable/mad_men" />
+
     <LinearLayout
         android:id="@+id/llButtons"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/llHeading"
         android:layout_centerHorizontal="false"
         android:gravity="center_horizontal"
@@ -55,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@id/btnAboutSaffi"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="170dp"
+            android:layout_marginTop="250dp"
             android:backgroundTint="@color/purple"
             android:text="@string/HomePage"
             android:textColor="@color/black" />
@@ -74,14 +81,6 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imgFooter"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:scaleType="fitEnd"
-        app:srcCompat="@drawable/footer" />
-
     <FrameLayout
         android:id="@+id/flSocialBottomSheet"
         android:layout_width="match_parent"
@@ -96,6 +95,14 @@
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_social" />
     </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgFooter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/footer" />
 
 
 </RelativeLayout>
