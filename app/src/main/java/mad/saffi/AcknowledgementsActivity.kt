@@ -22,7 +22,7 @@ class AcknowledgementsActivity : AppCompatActivity() {
 
         AcknowledgementBinding.mtExhibition.setOnClickListener()
         {
-            var intent = Intent(this, ExChoiceActivity::class.java)
+            var intent = Intent(this, ExhibitionActivity::class.java)
             startActivity(intent)
         }
 
