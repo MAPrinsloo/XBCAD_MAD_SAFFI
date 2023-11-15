@@ -67,20 +67,20 @@
             android:text="@string/Daniel" />
 
         <TextView
-            android:id="@+id/tvBarry"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="@string/Barry" />
-
-        <TextView
             android:id="@+id/tvAndre"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:text="@string/Andre" />
+
+        <TextView
+            android:id="@+id/tvBarry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/Barry" />
 
     </LinearLayout>
 

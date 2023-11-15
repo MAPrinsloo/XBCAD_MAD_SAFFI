@@ -22,18 +22,31 @@ class ExChoiceActivity : AppCompatActivity() {
         setContentView(ExChoiceView)
 
         val urlList = mutableListOf(
-            "https://www.youtube.com/embed/xWbGaUApvaw?si=GMVpE_FtjtuAUAV-",
+            //Andre Daniels
+            "https://www.youtube.com/embed/zu22I6iGQO8?si=GfYEdj6DfOGa4R7l",
+            //Barry Isaacs
             "https://www.youtube.com/embed/1YdPY1HhCts?si=efA0vriOpCEQhEfR",
-            "https://www.youtube.com/embed/ODP06L8yzsI?si=cFl1jru6oH1zul1A",
-            "https://www.youtube.com/embed/HedSajfNjiE?si=LdJ5JD4WlLr5P4xN",
-            "https://www.youtube.com/embed/7fcABOqNRSk?si=NGIFDT2eqzQqihzB",
+            //Daniel Hoorn
+            "https://www.youtube.com/embed/3_DJvAVpl7M?si=SyD51UDS_wn38cyh",
+            //Ehrlich Erasmus
+            "https://www.youtube.com/embed/19SC8z8hn8s?si=5x6-yGfvMStCPlMK",
+            //Fagrie Nasiep
+            "https://www.youtube.com/embed/Wg9mZGJ9d4s?si=KPSWRvPdy9bRTv6Z",
+            //Isaac February
             "https://www.youtube.com/embed/-Zs3uB-QW1M?si=ytshQUrGlEkTCPeO",
-            "https://www.youtube.com/embed/8l44xyG0Wfg?si=p6vRLo7EpL8UM_UU",
+            //John Bean
+            "https://www.youtube.com/embed/K74YDXxXMjs?si=J9gKx05Vzr_UjnsE",
+            //Patrick Pickering
             "https://www.youtube.com/embed/PYc1oUoWnaA?si=Segm70Ph8kq2E8DZ",
+            //Quentin Rapitse
             "https://www.youtube.com/embed/WYBvVbb8Igc?si=TpQq8a6QqdQ8NWcb",
+            //Raven Benny
             "https://www.youtube.com/embed/EKNU-Gch4cA?si=hZmDhmIl-1C2Id0U",
-            "https://www.youtube.com/embed/27KzNfDbm60?si=CcdZT67-bnHRrjT5",
-            "https://www.youtube.com/embed/ob_cmoKERxA?si=11N2ZEdL9ls4EHzJ",
+            //Shawn George
+            "https://www.youtube.com/embed/_m8scazcNaY?si=BpaaU0UxHnFonym2",
+            //Francois Titus and Hagin Kortjie
+            "https://www.youtube.com/embed/WmlYIm7V47E?si=U9E0U_hHhhFLLY9F",
+            //William Newhoudt
             "https://www.youtube.com/embed/PdPPRFc8O6o?si=dbUphL0ux6qepH2f"
         )
 
