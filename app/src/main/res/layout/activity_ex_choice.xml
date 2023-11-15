@@ -11,7 +11,7 @@
         android:id="@+id/mtExChoice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#EC891B"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:menu="@menu/top_app_bar"
@@ -20,45 +20,19 @@
         app:titleCentered="true" />
 
     <LinearLayout
-        android:id="@+id/llRow1_Names"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/mtExChoice"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvAndre"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="@string/Andre" />
-
-        <TextView
-            android:id="@+id/tvBarry"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="@string/Barry" />
-
-        <TextView
-            android:id="@+id/tvDaniel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="@string/Daniel" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/llRow1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow1_Names"
+        android:layout_below="@id/mtExChoice"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgDaniel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/daniel" />
 
         <ImageView
             android:id="@+id/imgAndre"
@@ -74,19 +48,78 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/barry" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRow1_Names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRow1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDaniel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/Daniel" />
+
+        <TextView
+            android:id="@+id/tvBarry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/Barry" />
+
+        <TextView
+            android:id="@+id/tvAndre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/Andre" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRow1_Names"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
         <ImageView
-            android:id="@+id/imgDaniel"
+            android:id="@+id/imgEhrlich"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/daniel" />
+            app:srcCompat="@drawable/ehrlich" />
+
+        <ImageView
+            android:id="@+id/imgFagri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/fagrie" />
+
+        <ImageView
+            android:id="@+id/imgIsaac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/isaac" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llRow2_Names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow1"
+        android:layout_below="@id/llRow2"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -114,41 +147,14 @@
             android:text="@string/Isaac" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/llRow2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/llRow2_Names"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imgEhrlich"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ehrlich" />
-
-        <ImageView
-            android:id="@+id/imgFagri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/fagrie" />
-
-        <ImageView
-            android:id="@+id/imgIsaac"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/isaac" />
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llRow3_Names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow2"
+        android:layout_below="@id/llRow3"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -180,7 +186,7 @@
         android:id="@+id/llRow3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow3_Names"
+        android:layout_below="@id/llRow2_Names"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
@@ -210,7 +216,7 @@
         android:id="@+id/llRow4_Names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow3"
+        android:layout_below="@id/llRow4"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
@@ -231,19 +237,20 @@
             android:text="@string/Shawn" />
 
         <TextView
-            android:id="@+id/tvFrancoisHagin"
+            android:id="@+id/tvWilliam"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:text="@string/FrancoisHagin" />
+            android:text="@string/William" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llRow4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow4_Names"
+        android:layout_below="@id/llRow3_Names"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
@@ -262,35 +269,37 @@
             app:srcCompat="@drawable/shawn" />
 
         <ImageView
-            android:id="@+id/imgFrancoisHagin"
+            android:id="@+id/imgWilliam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/francois_and_hagin" />
+            app:srcCompat="@drawable/william" />
+
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvWilliam"
+        android:id="@+id/tvFrancoisHagin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRow4"
+        android:layout_below="@id/imgFrancoisHagin"
         android:layout_centerHorizontal="true"
-        android:text="@string/William" />
+        android:gravity="center_horizontal"
+        android:text="@string/FrancoisHagin" />
 
     <ImageView
-        android:id="@+id/imgWilliam"
+        android:id="@+id/imgFrancoisHagin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvWilliam"
+        android:layout_below="@id/llRow4_Names"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/william" />
+        android:layout_weight="1"
+        app:srcCompat="@drawable/francois_and_hagin" />
 
     <ImageView
         android:id="@+id/ivExChoiceFooter"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/imgWilliam"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="-1dp"
