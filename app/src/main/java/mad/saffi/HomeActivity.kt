@@ -16,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
     //
     lateinit var HomeBinding: ActivityHomeBinding
     lateinit var HomeView: RelativeLayout
-    private val RubenVidSRC = "https://www.youtube.com/embed/Q7eWC_UD-oo?si=-k_jaFFKmFvxekW7"
+    private val RubenVidSRC = "https://www.youtube.com/embed/8iiB-FsnHys?si=5_Gm2pJgKKkXAlPD"
     //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
