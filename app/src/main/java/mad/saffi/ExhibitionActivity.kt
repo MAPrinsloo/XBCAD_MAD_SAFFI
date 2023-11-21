@@ -19,7 +19,7 @@ class ExhibitionActivity : AppCompatActivity() {
     //binding
     lateinit var ExhibitionBinding: ActivityExhibitionBinding
     lateinit var ExhibitionView: RelativeLayout
-    //
+    //Declarations
     private lateinit var  Interviewee: String
     private lateinit var  InterviewSRC: String
 
@@ -27,7 +27,7 @@ class ExhibitionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //initialise Interviewee
         Interviewee = intent.getStringExtra("interviewee").toString()
-        //initialise video
+        //initialise Video
         InterviewSRC = intent.getStringExtra("interview_src").toString()
 
         ExhibitionBinding = ActivityExhibitionBinding.inflate(layoutInflater)
@@ -53,22 +53,22 @@ class ExhibitionActivity : AppCompatActivity() {
         ExhibitionBinding.tvDisplay.text = storyContent
 
         //----------------------------------------------------------------------------------------//
-        //acknowledgements click
-        //Opens acknowledgements page
+        //Acknowledgements Click
+        //Opens Acknowledgements
         ExhibitionBinding.btnAcknowledgements.setOnClickListener()
         {
             val intent = Intent(this, AcknowledgementsActivity::class.java)
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //Back click
+        //Back Click
         ExhibitionBinding.mtExhibition.setOnClickListener()
         {
             val intent = Intent(this, ExChoiceActivity::class.java)
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //Settings icon click
+        //Settings Icon Click
         ExhibitionBinding.mtExhibition.setOnMenuItemClickListener { menuItem ->
             if (menuItem.itemId == R.id.account) {
                 val rightSlide = Slide()
@@ -82,7 +82,7 @@ class ExhibitionActivity : AppCompatActivity() {
             }
         }
         //----------------------------------------------------------------------------------------//
-        //On background click
+        //On Background Click
         //Closes all fragments
         ExhibitionBinding.rlExhibition.setOnClickListener()
         {
@@ -93,7 +93,7 @@ class ExhibitionActivity : AppCompatActivity() {
         }
     }
     //----------------------------------------------------------------------------------------//
-    //Closes the settings fragment
+    //Closes the Settings Fragment
     private fun CloseSettings()
     {
         val slide = Slide()
@@ -101,6 +101,8 @@ class ExhibitionActivity : AppCompatActivity() {
         TransitionManager.beginDelayedTransition(ExhibitionBinding.flSettings, slide)
         ExhibitionBinding.flSettings.isVisible = false
     }
+    //----------------------------------------------------------------------------------------//
+    //Method to Load the Video
     private fun LoadVideo(src:String)
     {
         ExhibitionBinding.wvVideo.settings.mediaPlaybackRequiresUserGesture = false
