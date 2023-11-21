@@ -5,6 +5,7 @@
     android:id="@+id/rlAcknowledgements"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#180F19"
     tools:context=".AcknowledgementsActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -22,17 +23,15 @@
     <LinearLayout
         android:id="@+id/llImageAcknowledgement"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:layout_below="@id/mtExhibition">
+        android:orientation="vertical">
 
         <com.jsibbold.zoomage.ZoomageView
             android:id="@+id/imgAcknowledgement"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
             app:srcCompat="@drawable/mad_acknowledgement"
             app:zoomage_animateOnReset="true"
             app:zoomage_autoCenter="true"
