@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.transition.Slide
 import android.transition.TransitionManager
 import android.view.Gravity
+import android.webkit.WebChromeClient
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
@@ -15,6 +16,7 @@ class HomeActivity : AppCompatActivity() {
     //
     lateinit var HomeBinding: ActivityHomeBinding
     lateinit var HomeView: RelativeLayout
+    private val RubenVidSRC = "https://www.youtube.com/embed/Q7eWC_UD-oo?si=-k_jaFFKmFvxekW7"
     //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,7 @@ class HomeActivity : AppCompatActivity() {
         HomeBinding = ActivityHomeBinding.inflate(layoutInflater)
         HomeView = HomeBinding.root
         setContentView(HomeView)
+        LoadVideo(RubenVidSRC)
         //
 
         //----------------------------------------------------------------------------------------//
@@ -89,6 +92,15 @@ class HomeActivity : AppCompatActivity() {
         TransitionManager.beginDelayedTransition(HomeBinding.flSocialBottomSheet, slide)
         HomeBinding.flSocialBottomSheet.isVisible = false
         HomeBinding.tgSelect.clearChecked()
+    }
+    private fun LoadVideo(src:String)
+    {
+        HomeBinding.wvVideo.settings.mediaPlaybackRequiresUserGesture = false
+        val videoUrl = "<iframe width=\"100%\" height=\"100%\" src=\"$src\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+
+        HomeBinding.wvVideo.loadData(videoUrl, "text/html", "utf-8")
+        HomeBinding.wvVideo.settings.javaScriptEnabled = true
+        HomeBinding.wvVideo.setWebChromeClient(WebChromeClient())
     }
 }
 //
