@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ButtonWidth">150dp</dimen>
+    <dimen name="SocialIconWidth">50dp</dimen>
+    <dimen name="SocialIconHeight">50dp</dimen>
+
+</resources>

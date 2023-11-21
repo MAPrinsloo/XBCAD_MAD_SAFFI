@@ -2,6 +2,38 @@
     <string name="app_name">MAD_SAFFI</string>
     <string name="settings">Settings</string>
     <string name="exhibition">Exhibition</string>>
+    <string name="ackPage">Acknowledgements Page</string>>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DigitalExhibition">DigitalExhibition</string>
+    <string name="AboutSAFFI">About SAFFI</string>
+    <string name="HomePage">Home Page</string>
+    <string name="Home">Home</string>
+    <string name="Acknowledgements">Acknowledgements</string>
+    <string name="MAD">MAD Exhibition</string>
+    <string name="LandingPage">Exit</string>
+    <string name="social">Social Tab</string>
+    <string name="facebook_link">https://www.facebook.com/profile.php?id=100069313305193</string>
+    <string name="web_link">https://saffi.org.za/</string>
+    <string name="phone_link">+27 21 462 2277</string>
+    <string name="email_link">programs@saffi.org.za</string>
+    <string name="Andre">Andre Daniels</string>
+    <string name="Barry">Barry Isaacs</string>
+    <string name="Daniel">Daniel Hoorn</string>
+    <string name="Ehrlich">Earl-Djehuti Erasmus</string>
+    <string name="Fagri">Fagrie Nasiep</string>
+    <string name="Isaac">Isaac February</string>
+    <string name="John">John Bean</string>
+    <string name="Patrick">Patrick Pickering</string>
+    <string name="Quentin">Quentin Rapitse</string>
+    <string name="Raven">Raven Benny</string>
+    <string name="Shawn">Shawn George</string>
+    <string name="FrancoisHagin">Francois Titus and Hagin Kortjie</string>
+    <string name="William">William Newhoudt</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Website">Website</string>
+    <string name="Email">Email</string>
+    <string name="PhoneNumber">Phone Number</string>
+
+
 </resources>
