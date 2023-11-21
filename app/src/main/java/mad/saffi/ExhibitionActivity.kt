@@ -40,7 +40,7 @@ class ExhibitionActivity : AppCompatActivity() {
         val resourceId = resources.getIdentifier(fileName, "raw", packageName)
 
         //
-            val inputStream: InputStream = resources.openRawResource(resourceId)
+        val inputStream: InputStream = resources.openRawResource(resourceId)
 
         val scanner = Scanner(inputStream)
         val stringBuilder = StringBuilder()

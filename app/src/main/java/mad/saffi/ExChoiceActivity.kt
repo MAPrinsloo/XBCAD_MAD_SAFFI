@@ -21,6 +21,7 @@ class ExChoiceActivity : AppCompatActivity() {
         ExChoiceView = ExChoiceBinding.root
         setContentView(ExChoiceView)
 
+        //A Mutable List to Store All of the YouTube URLs
         val urlList = mutableListOf(
             //Andre Daniels
             "https://www.youtube.com/embed/zu22I6iGQO8?si=GfYEdj6DfOGa4R7l",
@@ -51,7 +52,7 @@ class ExChoiceActivity : AppCompatActivity() {
         )
 
         //----------------------------------------------------------------------------------------//
-        //Settings icon click
+        //Settings Icon Click
         ExChoiceBinding.mtExChoice.setOnMenuItemClickListener { menuItem ->
             if (menuItem.itemId == R.id.account) {
                 val rightSlide = Slide()
@@ -65,15 +66,15 @@ class ExChoiceActivity : AppCompatActivity() {
             }
         }
         //----------------------------------------------------------------------------------------//
-        //Back click
+        //Back Click
         ExChoiceBinding.mtExChoice.setOnClickListener()
         {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //On background click
-        //Closes all fragments
+        //On Background Click
+        //Closes All Fragments
         ExChoiceBinding.rlExChoice.setOnClickListener()
         {
             if (ExChoiceBinding.flSettings.isVisible == true)
@@ -82,7 +83,7 @@ class ExChoiceActivity : AppCompatActivity() {
             }
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Andre
         ExChoiceBinding.imgAndre.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -91,7 +92,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Barry
         ExChoiceBinding.imgBarry.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -100,7 +101,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Daniel
         ExChoiceBinding.imgDaniel.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -109,7 +110,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Ehrlich
         ExChoiceBinding.imgEhrlich.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -118,7 +119,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Fagri
         ExChoiceBinding.imgFagri.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -127,7 +128,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Isaac
         ExChoiceBinding.imgIsaac.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -136,7 +137,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for John
         ExChoiceBinding.imgJohn.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -145,7 +146,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Patrick
         ExChoiceBinding.imgPatrick.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -154,7 +155,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Quentin
         ExChoiceBinding.imgQuentin.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -163,7 +164,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Raven
         ExChoiceBinding.imgRaven.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -172,7 +173,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Shawn
         ExChoiceBinding.imgShawn.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -181,7 +182,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for Fancois
         ExChoiceBinding.imgFrancoisHagin.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
@@ -190,7 +191,7 @@ class ExChoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Logic for click for William
         ExChoiceBinding.imgWilliam.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
