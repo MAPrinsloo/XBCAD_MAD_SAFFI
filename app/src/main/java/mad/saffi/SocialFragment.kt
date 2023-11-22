@@ -11,17 +11,20 @@ import mad.saffi.databinding.FragmentSettingsBinding
 import mad.saffi.databinding.FragmentSocialBinding
 
 class SocialFragment : Fragment() {
+    //Binding
     lateinit var SocialBinding: FragmentSocialBinding
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
 
         SocialBinding = FragmentSocialBinding.inflate(inflater, container, false)
 
+        //----------------------------------------------------------------------------------------//
+        //CLick Listener
         SocialBinding.ivFacebook.setOnClickListener {
             val facebookUrl = getString(R.string.facebook_link)
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(facebookUrl))
@@ -45,6 +48,7 @@ class SocialFragment : Fragment() {
             val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
             startActivity(intent)
         }
+        //----------------------------------------------------------------------------------------//
 
 
 

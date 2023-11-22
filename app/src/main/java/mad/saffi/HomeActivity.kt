@@ -13,19 +13,20 @@ import androidx.core.view.isVisible
 import mad.saffi.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
-    //
+    //Binding
     lateinit var HomeBinding: ActivityHomeBinding
     lateinit var HomeView: RelativeLayout
+    //Home Intro video
     private val RubenVidSRC = "https://www.youtube.com/embed/8iiB-FsnHys?si=5_Gm2pJgKKkXAlPD"
-    //
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //
+        //Init binding
         HomeBinding = ActivityHomeBinding.inflate(layoutInflater)
         HomeView = HomeBinding.root
         setContentView(HomeView)
         LoadVideo(RubenVidSRC)
-        //
+
 
         //----------------------------------------------------------------------------------------//
         //About button click
@@ -38,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
             HomeBinding.flSocialBottomSheet.isVisible = !HomeBinding.flSocialBottomSheet.isVisible
         }
         //----------------------------------------------------------------------------------------//
-        //
+        //Click Listener
         HomeBinding.btnMAD.setOnClickListener()
         {
             val intent = Intent(this, ExChoiceActivity::class.java)
@@ -93,6 +94,8 @@ class HomeActivity : AppCompatActivity() {
         HomeBinding.flSocialBottomSheet.isVisible = false
         HomeBinding.tgSelect.clearChecked()
     }
+    //----------------------------------------------------------------------------------------//
+    //Loads the videos
     private fun LoadVideo(src:String)
     {
         HomeBinding.wvVideo.settings.mediaPlaybackRequiresUserGesture = false
@@ -100,7 +103,7 @@ class HomeActivity : AppCompatActivity() {
 
         HomeBinding.wvVideo.loadData(videoUrl, "text/html", "utf-8")
         HomeBinding.wvVideo.settings.javaScriptEnabled = true
-        HomeBinding.wvVideo.setWebChromeClient(WebChromeClient())
+        HomeBinding.wvVideo.webChromeClient = WebChromeClient()
     }
 }
-//
+//----------------------------------------------------------------------------------------//

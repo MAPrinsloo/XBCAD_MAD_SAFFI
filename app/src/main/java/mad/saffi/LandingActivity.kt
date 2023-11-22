@@ -11,16 +11,20 @@ import androidx.core.view.isVisible
 import mad.saffi.databinding.ActivityLandingBinding
 
 class LandingActivity : AppCompatActivity() {
+    //Binding
     lateinit var LandingBinding: ActivityLandingBinding
     lateinit var LandingView: RelativeLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //Init binding
         LandingBinding = ActivityLandingBinding.inflate(layoutInflater)
         LandingView = LandingBinding.root
         setContentView(LandingView)
 
+        //----------------------------------------------------------------------------------------//
+        //Click listeners
         LandingBinding.btnHome.setOnClickListener()
         {
             var intent = Intent(this, HomeActivity::class.java)
@@ -42,9 +46,10 @@ class LandingActivity : AppCompatActivity() {
                 CloseSocials()
             }
         }
-
+        //----------------------------------------------------------------------------------------//
     }
 
+    //Close social fragment
     private fun CloseSocials()
     {
         val slide = Slide()
@@ -52,9 +57,5 @@ class LandingActivity : AppCompatActivity() {
         TransitionManager.beginDelayedTransition(LandingBinding.flSocialBottomSheet, slide)
         LandingBinding.flSocialBottomSheet.isVisible = false
     }
-
-
-
-
-
 }
+    //----------------------------------------------------------------------------------------//
