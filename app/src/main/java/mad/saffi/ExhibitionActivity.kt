@@ -34,13 +34,13 @@ class ExhibitionActivity : AppCompatActivity() {
         ExhibitionView = ExhibitionBinding.root
         setContentView(ExhibitionView)
 
-        LoadVideo(InterviewSRC);
+        LoadVideo(InterviewSRC)
         //
-        val fileName = Interviewee.toLowerCase()
+        val fileName = Interviewee.lowercase(Locale.getDefault())
         val resourceId = resources.getIdentifier(fileName, "raw", packageName)
 
         //
-            val inputStream: InputStream = resources.openRawResource(resourceId)
+        val inputStream: InputStream = resources.openRawResource(resourceId)
 
         val scanner = Scanner(inputStream)
         val stringBuilder = StringBuilder()
@@ -108,6 +108,6 @@ class ExhibitionActivity : AppCompatActivity() {
 
         ExhibitionBinding.wvVideo.loadData(videoUrl, "text/html", "utf-8")
         ExhibitionBinding.wvVideo.settings.javaScriptEnabled = true
-        ExhibitionBinding.wvVideo.setWebChromeClient(WebChromeClient())
+        ExhibitionBinding.wvVideo.webChromeClient = WebChromeClient()
     }
 }

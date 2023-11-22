@@ -12,6 +12,7 @@ import android.view.Gravity
 import androidx.core.view.isVisible
 
 class AcknowledgementsActivity : AppCompatActivity() {
+    //Binding
     lateinit var AcknowledgementBinding: ActivityAcknowledgementsBinding
     lateinit var AcknowledgementView : RelativeLayout
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,12 +21,14 @@ class AcknowledgementsActivity : AppCompatActivity() {
         AcknowledgementView = AcknowledgementBinding.root
         setContentView(AcknowledgementView)
 
+        //Starts ExhibitionActivity when clicked
         AcknowledgementBinding.mtExhibition.setOnClickListener()
         {
             var intent = Intent(this, ExhibitionActivity::class.java)
             startActivity(intent)
         }
 
+        //Click Listener
         AcknowledgementBinding.mtExhibition.setOnMenuItemClickListener { menuItem ->
             if (menuItem.itemId == R.id.account) {
                 val rightSlide = Slide()
