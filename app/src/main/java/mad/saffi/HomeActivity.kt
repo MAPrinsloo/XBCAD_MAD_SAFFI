@@ -8,7 +8,6 @@ import android.transition.TransitionManager
 import android.view.Gravity
 import android.webkit.WebChromeClient
 import android.widget.RelativeLayout
-import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import mad.saffi.databinding.ActivityHomeBinding
 
@@ -17,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
     lateinit var HomeBinding: ActivityHomeBinding
     lateinit var HomeView: RelativeLayout
     //Home Intro video
-    private val RubenVidSRC = "https://www.youtube.com/embed/8iiB-FsnHys?si=5_Gm2pJgKKkXAlPD"
+    private val IntroVidSRC = "https://www.youtube.com/embed/2R-r6pYGfEc?si=trRoXRVjJvRT4Z5F"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
         HomeBinding = ActivityHomeBinding.inflate(layoutInflater)
         HomeView = HomeBinding.root
         setContentView(HomeView)
-        LoadVideo(RubenVidSRC)
+        LoadVideo(IntroVidSRC)
 
 
         //----------------------------------------------------------------------------------------//
