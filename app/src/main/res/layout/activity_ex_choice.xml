@@ -277,24 +277,71 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvFrancoisHagin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imgFrancoisHagin"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:text="@string/FrancoisHagin" />
-
-    <ImageView
-        android:id="@+id/imgFrancoisHagin"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/llRow5"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/llRow4_Names"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/francois_and_hagin" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgRuben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ruben" />
+
+        <ImageView
+            android:id="@+id/imgFrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/francois_and_hagin" />
+
+        <ImageView
+            android:id="@+id/imgEliza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/eliza" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llRow5_Names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRow5"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRuben"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/Ruben" />
+
+        <TextView
+            android:id="@+id/tvFrance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/FrancoisHagin" />
+
+        <TextView
+            android:id="@+id/tvEliza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/Eliza" />
+
+    </LinearLayout>
+
+
 
     <ImageView
         android:id="@+id/ivExChoiceFooter"

@@ -23,32 +23,38 @@ class ExChoiceActivity : AppCompatActivity() {
 
         //A Mutable List to Store All of the YouTube URLs
         val urlList = mutableListOf(
-            //Andre Daniels
-            "https://www.youtube.com/embed/zu22I6iGQO8?si=GfYEdj6DfOGa4R7l",
-            //Barry Isaacs
-            "https://www.youtube.com/embed/1YdPY1HhCts?si=efA0vriOpCEQhEfR",
             //Daniel Hoorn
-            "https://www.youtube.com/embed/3_DJvAVpl7M?si=SyD51UDS_wn38cyh",
+            "https://www.youtube.com/embed/367PU6B7GhY?si=XfSJjb4HkW2UPmJu",
+            //Andre Daniels
+            "https://www.youtube.com/embed/HKvMQKRtuQo?si=p2DUTaZmxGlU99wz",
+            //Barry Isaacs
+            "https://www.youtube.com/embed/EZTIl-rjaXo?si=Y1YTKSEAa8InnkJ6",
             //Ehrlich Erasmus
-            "https://www.youtube.com/embed/19SC8z8hn8s?si=5x6-yGfvMStCPlMK",
+            "https://www.youtube.com/embed/q8XN6aUfs0M?si=HO9iS6a-J5APrQqo",
             //Fagrie Nasiep
-            "https://www.youtube.com/embed/Wg9mZGJ9d4s?si=KPSWRvPdy9bRTv6Z",
+            "https://www.youtube.com/embed/ojvt1ZUNw5Y?si=XvQYlQEe_-TeAW-3",
             //Isaac February
-            "https://www.youtube.com/embed/-Zs3uB-QW1M?si=ytshQUrGlEkTCPeO",
+            "https://www.youtube.com/embed/3OMxJmAXD1c?si=5kRrhgCIY3tq5hOk",
             //John Bean
-            "https://www.youtube.com/embed/K74YDXxXMjs?si=J9gKx05Vzr_UjnsE",
+            "https://www.youtube.com/embed/VnSi9vNiKj4?si=5PB4DS7UQUh7IMTI",
             //Patrick Pickering
-            "https://www.youtube.com/embed/PYc1oUoWnaA?si=Segm70Ph8kq2E8DZ",
+            "https://www.youtube.com/embed/bFJYPkKKacM?si=meyP0n7VTtKmESSn",
             //Quentin Rapitse
-            "https://www.youtube.com/embed/WYBvVbb8Igc?si=TpQq8a6QqdQ8NWcb",
+            "https://www.youtube.com/embed/g2bpNXXK-Hg?si=annctZ-pRmP5eWkJ",
             //Raven Benny
-            "https://www.youtube.com/embed/EKNU-Gch4cA?si=hZmDhmIl-1C2Id0U",
+            "https://www.youtube.com/embed/FZnsfJIP0Uo?si=VtujSOPxm9oXzb0L",
             //Shawn George
-            "https://www.youtube.com/embed/_m8scazcNaY?si=BpaaU0UxHnFonym2",
-            //Francois Titus and Hagin Kortjie
-            "https://www.youtube.com/embed/WmlYIm7V47E?si=U9E0U_hHhhFLLY9F",
+            "https://www.youtube.com/embed/oOU82stw4NM?si=FgbGoji_w9NCkSaC",
             //William Newhoudt
-            "https://www.youtube.com/embed/PdPPRFc8O6o?si=dbUphL0ux6qepH2f"
+            "https://www.youtube.com/embed/rScw91tZ66s?si=ruhK2KgLAzDbQYUe",
+            //Dr Ruben
+            "https://www.youtube.com/embed/uQmOMI-rZMs?si=2sVIAlVx16SnG3_U",
+            //Francois Titus and Hagin Kortjie
+            "https://www.youtube.com/embed/WmlYIm7V47E?si=ip_fFpQwtKZ36AFz",
+            //Elizabeth
+            "https://www.youtube.com/embed/Sfl75d1VMn8?si=GBxNsqx2eJFg921G"
+
+
         )
 
         //----------------------------------------------------------------------------------------//
@@ -88,7 +94,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "andre")
-            intent.putExtra("interview_src", urlList[0])
+            intent.putExtra("interview_src", urlList[1])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -97,7 +103,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "barry")
-            intent.putExtra("interview_src", urlList[1])
+            intent.putExtra("interview_src", urlList[2])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -106,7 +112,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "daniel")
-            intent.putExtra("interview_src", urlList[2])
+            intent.putExtra("interview_src", urlList[0])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -160,7 +166,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "quentin")
-            intent.putExtra("interview_src", urlList[9])
+            intent.putExtra("interview_src", urlList[8])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -169,7 +175,7 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "raven")
-            intent.putExtra("interview_src", urlList[8])
+            intent.putExtra("interview_src", urlList[9])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -183,11 +189,11 @@ class ExChoiceActivity : AppCompatActivity() {
         }
         //----------------------------------------------------------------------------------------//
         //Logic for click for Fancois
-        ExChoiceBinding.imgFrancoisHagin.setOnClickListener()
+        ExChoiceBinding.imgFrance.setOnClickListener()
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "francois_hagin")
-            intent.putExtra("interview_src", urlList[11])
+            intent.putExtra("interview_src", urlList[13])
             startActivity(intent)
         }
         //----------------------------------------------------------------------------------------//
@@ -196,7 +202,25 @@ class ExChoiceActivity : AppCompatActivity() {
         {
             val intent = Intent(this, ExhibitionActivity::class.java)
             intent.putExtra("interviewee", "william")
+            intent.putExtra("interview_src", urlList[11])
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //Logic for click for Ruben
+        ExChoiceBinding.imgRuben.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "ruben")
             intent.putExtra("interview_src", urlList[12])
+            startActivity(intent)
+        }
+        //----------------------------------------------------------------------------------------//
+        //Logic for click for Elizabeth
+        ExChoiceBinding.imgEliza.setOnClickListener()
+        {
+            val intent = Intent(this, ExhibitionActivity::class.java)
+            intent.putExtra("interviewee", "eliza")
+            intent.putExtra("interview_src", urlList[14])
             startActivity(intent)
         }
     }
