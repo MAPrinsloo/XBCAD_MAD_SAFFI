@@ -26,7 +26,7 @@ class ExChoiceActivity : AppCompatActivity() {
             //Daniel Hoorn
             "https://www.youtube.com/embed/367PU6B7GhY?si=XfSJjb4HkW2UPmJu",
             //Andre Daniels
-            "https://www.youtube.com/embed/HKvMQKRtuQo?si=p2DUTaZmxGlU99wz",
+            "https://www.youtube.com/embed/HKvMQKRtuQo?si=ATDywjcdOneza_Da",
             //Barry Isaacs
             "https://www.youtube.com/embed/EZTIl-rjaXo?si=Y1YTKSEAa8InnkJ6",
             //Ehrlich Erasmus
