@@ -25,8 +25,11 @@ class ExChoiceActivity : AppCompatActivity() {
         val urlList = mutableListOf(
             //Daniel Hoorn
             "https://www.youtube.com/embed/367PU6B7GhY?si=XfSJjb4HkW2UPmJu",
+
             //Andre Daniels
             "https://www.youtube.com/embed/HKvMQKRtuQo?si=ATDywjcdOneza_Da",
+            //"https://www.youtube.com/embed/VnSi9vNiKj4?si=O7CJBv81v4jedVtT",
+
             //Barry Isaacs
             "https://www.youtube.com/embed/EZTIl-rjaXo?si=Y1YTKSEAa8InnkJ6",
             //Ehrlich Erasmus
